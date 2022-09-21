@@ -39,6 +39,8 @@ a {
 /* Header */
 .navbar {
     background-color: var(--black);
+    position: absolute;
+    width: 100%;
 }
 
 .navbar-container {
@@ -113,4 +115,13 @@ a {
     left: 9.23px;
     top: 22.64px;
     z-index: 1;
+}
+
+/* Watch your favourite animal section */
+#watch-animal-online {
+    height: 780px;
+    width: 100%;
+    background-image: url(../../assets/images/Giant\ Panda.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
