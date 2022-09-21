@@ -5,6 +5,7 @@
     --black: #000000;
     --green: #4B9200;
     --orang: #F9804B;
+    --orang-grad: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     --yellow: #FFEE2E;
     --orange-grad: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -99,7 +100,7 @@ a {
 .logo-text {
     position: relative;
     color: var(--white);
-    font-size: 19px;
+    font-size: 1.188rem;
     line-height: 23px;
     text-align: center;
     font-style: normal;
@@ -125,3 +126,71 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.orange-circle {
+    position: absolute;
+    width: 465px;
+    height: 465px;
+    background: var(--orang-grad);
+    border-radius: 50%;
+    left: calc(50% - 465px/2 + 239.5px);
+    top: 92px; 
+}
+
+.watch-animal-online-header {
+    position: absolute;
+    width: 500.31px;
+    height: 400px;
+    left: calc(50% - 500.31px/2 + 330.15px);
+    top: 166px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6.656rem;
+    line-height: 75%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.yellow-text {
+    color: var(--yellow) ;
+}
+
+.round-btn {
+    cursor: pointer;
+    position: absolute;
+    background: var(--orang-grad);
+    border: none;
+    width: 298px;
+    height: 54px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+    border-radius: 25px;
+    color: var(--white);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.watch-btn {
+    left: calc(50% - 298px/2 + 332px);
+    top: 626px;
+}
+
+.round-btn:hover {
+    background: var(--orang);
+}
+
+.round-btn:active {
+    background: var(--green);
+}
+
+.round-btn:disabled {
+    background: var(--gray);
+    cursor: not-allowed;
+}
+.round-btn[tabindex]:focus {
+    background: var(--green);
+    outline: none;
+}       
