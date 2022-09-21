@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root {
+    --white: #FFFFFF;
     --black: #000000;
     --green: #4B9200;
     --orang: #F9804B;
@@ -23,15 +24,93 @@
 
 html {
     font-family: 'Roboto', sans-serif;
-    background: var(--orange-grad);
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1160px;
     margin: 0 auto;
 }
 
 /* Header */
 .navbar {
-    background-color: var(--green);
+    background-color: var(--black);
+}
+
+.navbar-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list-link {
+    margin-right: 58px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 1rem;
+}
+
+.navbar-list-link-active {
+    color: var(--orang);
+}
+
+.navbar-list-link:hover {
+    color: var(--orang);
+}
+
+.credentials-text {
+    margin-right: 0;
+}
+
+/* Logo */
+.logo {
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid var(--white);
+    width: 82px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 63px;
+}
+
+.logo-text {
+    position: relative;
+    color: var(--white);
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    width: 72.49px;
+    height: 44.91px;
+    z-index: 2;
+}
+
+#logo-bamboo-icon {
+    position: absolute;
+    color: var(--white);
+    left: 9.23px;
+    top: 22.64px;
+    z-index: 1;
 }
