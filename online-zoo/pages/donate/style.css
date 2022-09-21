@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --green: #4B9200;
+    --orang: #F9804B;
+    --yellow: #FFEE2E;
+    --orange-grad: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --rad: #D31414;
+    --black-blue: #333B41;
+    --gray: #767474;
+    --gray-smoky: #ABABAB;
+    --light-grey: #F1F3F2;
+    --frosted-glass-white: rgba(253, 253, 255, 0.52);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--black);
+}
+
+.navbar-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list-link {
+    margin-right: 58px;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 140%;
+    font-size: 1rem;
+}
+
+.navbar-list-link-active {
+    color: var(--orang);
+}
+
+.navbar-list-link:hover {
+    color: var(--orang);
+}
+
+.credentials-text {
+    margin-right: 0;
+}
+
+/* Logo */
+.logo {
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid var(--white);
+    width: 82px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 63px;
+}
+
+.logo-text {
+    position: relative;
+    color: var(--white);
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    width: 72.49px;
+    height: 44.91px;
+    z-index: 2;
+}
+
+#logo-bamboo-icon {
+    position: absolute;
+    color: var(--white);
+    left: 9.23px;
+    top: 22.64px;
+    z-index: 1;
+}
