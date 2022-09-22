@@ -266,6 +266,8 @@ a {
 .animals-grid-btn {
     display: flex;
     justify-content: center;
+    height: 54px;
+    margin-bottom: 100px;
 }
 
 .card-item-bottom {
@@ -308,3 +310,34 @@ a {
     right: 0;
     top: 2344px;
 }
+
+.buttons-container {
+    position: relative;
+}
+
+.circle-btn {
+    width: 62px;
+    height: 62px;
+    background: var(--orang-grad);
+    border-radius: 50%;
+}
+
+.next {
+    position: absolute;
+    top: 40.5%;
+    right: -84px;
+}
+
+.prev {
+    position: absolute;
+    top: 40.5%;
+    left: -84px;
+}
+
+.arrow-position {
+    position: absolute;
+    top: 25px;
+    left: 22px;
+}
+
+
