@@ -302,13 +302,13 @@ a {
 .palm-foto {
     position: absolute;
     left: -588px;
-    top: 2159px;
+    top: 2166px;
 }
 
 .strelitzia {
     position: absolute;
     right: 0;
-    top: 2344px;
+    top: 2351px;
 }
 
 .buttons-container {
@@ -320,17 +320,22 @@ a {
     height: 62px;
     background: var(--orang-grad);
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle-btn:hover {
+    background: var(--green);
 }
 
 .next {
     position: absolute;
-    top: 40.5%;
+    top: 40.4%;
     right: -84px;
 }
 
 .prev {
     position: absolute;
-    top: 40.5%;
+    top: 40.4%;
     left: -84px;
 }
 
@@ -338,6 +343,12 @@ a {
     position: absolute;
     top: 25px;
     left: 22px;
+}
+
+/* pick-feed-friend */
+#pick-feed-friend {
+    background: var(--orange-grad);
+    height: 1004px;
 }
 
 
