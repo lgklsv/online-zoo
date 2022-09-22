@@ -240,7 +240,71 @@ a {
 
 .flower-foto {
     position: absolute;
-    left: 88%;
-    top: 792px;
-    
+    right: -110px;
+    top: 792px;   
+}
+
+/* Animasls grid section */
+.animals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+    margin-bottom: 80px;
+}
+
+.card-item {
+    border: 1px solid var(--orang);
+    border-radius: 5px;
+}
+
+.card-img {
+    border-radius: 4px 4px 0 0; 
+}
+
+.animals-grid-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.card-item-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-item-title {
+    padding: 8px 12px 14px 16px;
+}
+
+.animal-name {
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 500;
+}
+
+.animal-subtitle {
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 15px;
+}
+
+.card-item-icon {
+    padding-top: 2px;
+    padding-right: 12px;
+}
+
+.palm-foto {
+    position: absolute;
+    left: -588px;
+    top: 2159px;
+}
+
+.strelitzia {
+    position: absolute;
+    right: 0;
+    top: 2344px;
 }
