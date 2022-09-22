@@ -26,6 +26,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     background: var(--white);
+    overflow-x: hidden;
 }
 
 a {
@@ -194,3 +195,52 @@ a {
     background: var(--green);
     outline: none;
 }       
+
+/* Hero section */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-bottom: 180px;
+}
+
+.bamboo-cap-img {
+    width: 609px;
+    height: 403px;
+}
+
+.hero-right {
+    margin-left: 87px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-header-h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 120%;
+    color: var(--black-blue);
+}
+
+.hero-header-h3 {
+    font-weight: 400;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 120%;
+    color: var(--black-blue);
+}
+
+.text-small {
+    font-size: 1rem;
+    line-height: 130%;
+    color: var(--black-blue);
+    font-weight: 400;
+}
+
+.flower-foto {
+    position: absolute;
+    left: 88%;
+    top: 792px;
+    
+}
