@@ -257,6 +257,13 @@ a {
 .card-item {
     border: 1px solid var(--orang);
     border-radius: 5px;
+    transition: transform 0.5s;
+}
+
+.card-item:hover {
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform: scale(1.05);
 }
 
 .card-img {
