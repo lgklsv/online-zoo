@@ -8,7 +8,8 @@
     --orang-grad: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     --yellow: #FFEE2E;
     --orange-grad: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
-    --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    --pink-gradient: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+    linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     --rad: #D31414;
     --black-blue: #333B41;
     --gray: #767474;
@@ -411,14 +412,14 @@ a {
     align-self: flex-start;
     margin-left: 99px;
     margin-right: 198px;
+    margin-bottom: 60px;
 }
 
-.pick-feed-friend-h3 {
+.h3-header {
     font-weight: 400;
     font-size: 2.25rem;
     line-height: 130%;
     color: var(--black-blue);
-    margin-top: 60px;
 }
 
 .pick-feed-friend-scheme {
@@ -470,4 +471,146 @@ a {
     text-decoration: none;
     color: var(--black-blue);
     border-bottom: 1px solid #FE9013;
+}
+
+/* testimonials */
+
+.testimonials-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-header {
+    margin-top: 140px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 47px;
+    margin-bottom: 21px;
+}
+
+.testimonials-card-inner {
+    height: 368px;
+    overflow: hidden;
+}
+
+.testimonials-card {
+    position: relative;
+    height: 391px;
+    border-radius: 20px;
+    background: var(--light-grey);
+    text-align: center;
+}
+  
+.testimonials-card::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: var(--pink-gradient);
+    border-radius: 22px;
+    z-index: -1;
+}
+
+.testimonials-card-head {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.testimonials-right-head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.testimonials-subtext {
+    display: flex;
+}
+
+.testimonials-profile-pic {
+    margin: 12px 10px 11px 16px;
+}
+
+.testimonials-name {
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.testimonials-light-text {
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 15px;
+    color: #BDBDBD;
+    margin-right: 6px;
+}
+
+.testimonials-main-text {
+    font-weight: 300;
+    line-height: 120%;
+    font-size: 15px;
+    color: var(--gray);
+    text-align: left;
+    margin-left: 16px;
+    margin-right: 15px;
+}
+
+.progress-bar {
+    position: relative;
+    width: 599px;
+    height: 6px;
+    background: #F5F7F6;
+    border-radius: 5px;
+    margin-bottom: 31px;
+}
+
+.progress-bar::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: var(--pink-gradient);
+    border-radius: 6px;
+    z-index: -1;
+}
+
+.orang-progress {
+    width: 115.19px;
+    height: 6px;
+    border-radius: 5px;
+    background: #FE9013;
+}
+
+.slight-round-btn {
+    border-radius: 5px;
+    position: relative;
+}
+
+.testimonials-btn {
+    align-self: flex-start;
+    margin-bottom: 180px;
+}
+
+.leav_foto {
+    position: absolute;
+    top: 4270.88px;
+    right: -165px;
+    z-index: -1;
+}
+
+
+/* Footer */
+footer {
+    height: 443px;
+    background: #000000;
 }
