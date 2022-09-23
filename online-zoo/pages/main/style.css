@@ -356,6 +356,118 @@ a {
 #pick-feed-friend {
     background: var(--orange-grad);
     height: 1004px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.pick-feed-friend-container {
+    height: 835px;
+    width: 1160px;
+    background: var(--frosted-glass-white);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.pick-feed-friend-h2 {
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    font-size: 3rem;
+    color: #FE9013;
+    margin-top: 41px;
+}
+
+.pick-feed-friend-h4 {
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 1.5rem;
+    color: var(--black-blue);
+    align-self: flex-start;
+    margin-left: 99px;
+    margin-top: 30px;
+}
+
+.pick-feed-friend-stong-text {
+    font-weight: 500;
+    line-height: 130%;
+    color: var(--black-blue);
+    font-size: 1rem;
+    margin-top: 40px;
+    align-self: flex-start;
+    margin-left: 99px;
+}
+
+.pick-feed-friend-reg-text {
+    font-weight: 400;
+    line-height: 130%;
+    color: var(--black-blue);
+    font-size: 1rem;
+    margin-top: 10px;
+    align-self: flex-start;
+    margin-left: 99px;
+    margin-right: 198px;
+}
+
+.pick-feed-friend-h3 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 130%;
+    color: var(--black-blue);
+    margin-top: 60px;
+}
+
+.pick-feed-friend-scheme {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.feed-friend-btn {
+    display: flex;
+    justify-content: center;
+    height: 54px;
+}
+
+.card-icon {
+    width: 168px;
+    height: 244px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.box-icon {
+    background-color: var(--white);
+    border-radius: 5px;
+    border: 1px solid #FE9013;
+    width: 168px;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-big {
+    margin-bottom: 70px;
+}
+
+.undebox-text {
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--black-blue);
+    margin-top: 30px;
+}
+
+.orang-underline-link {
+    text-decoration: none;
+    color: var(--black-blue);
+    border-bottom: 1px solid #FE9013;
+}
