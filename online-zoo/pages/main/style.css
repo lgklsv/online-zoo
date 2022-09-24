@@ -672,3 +672,110 @@ footer {
 .socials-link-link {
     display: flex;
 }
+
+.footer-navbar {
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: 40px;
+}
+
+.subscribe {
+    color: var(--white);
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+}
+
+.email-input {
+    height: 42px;
+    width: 228px;
+    padding-left: 10px;
+    background: transparent;
+    border: 0.7px solid var(--orang);
+    border-radius: 2px;
+    color: #BDBDBD;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 140%;
+
+}
+
+.email-input::placeholder {
+    color: #BDBDBD;
+    padding: 10px 7 10px 0px;
+    font-weight: 400; 
+    font-size: 1rem;
+    line-height: 140%;
+}
+
+.email-input:focus {
+    outline: none;
+    border: 0.7px solid var(--green);
+}
+
+.email-input:invalid {
+    outline: none;
+    border: 0.7px solid var(--rad);
+}
+
+.email-input:focus::placeholder {
+    color: transparent;  
+}
+
+.email-input:focus + .email-submit-btn {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.email-input:invalid + .email-submit-btn {
+    border: 1px solid var(--rad);
+    color: var(--rad);
+}
+
+.email-submit-btn {
+    background: var(--light-grey);
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    height: 42px;
+    width: 129px;
+    margin-left: 10px;
+    color: var(--black);
+    font-size: 1rem;
+    line-height: 140%;
+    cursor: pointer;
+}
+
+.footer-credentials {
+    align-self: flex-end;
+    margin-top: 216px;
+}
+
+.footer-credentials-text {
+    margin-bottom: 10px;
+    color: var(--white);
+    line-height: 130%;
+    font-weight: 100;
+    font-size: 1rem;
+    border-bottom: 1px solid transparent;
+}
+
+.footer-credentials-text:last-child {
+    margin-bottom: 0;
+}
+
+.footer-navbar-list-item {
+    margin-right: 0;
+    margin-left: 58px;
+}
+
+.footer-credentials-link:hover .footer-credentials-text{
+    border-bottom: 1px solid var(--green);
+    color: var(--green);
+}
