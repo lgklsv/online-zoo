@@ -261,12 +261,23 @@ a {
     border: 1px solid var(--orang);
     border-radius: 5px;
     transition: transform 0.5s;
+    position: relative;
 }
 
 .card-item:hover {
     cursor: pointer;
     transition: transform 0.5s;
     transform: scale(1.05);
+}
+
+.card-item:hover .card-amination-text{
+    transition: opacity 0.5s;
+    opacity: 100%;
+}
+
+.card-item:hover .card-img {
+    transition: filter 0.5s;
+    filter: brightness(50%);
 }
 
 .card-img {
@@ -354,6 +365,15 @@ a {
     top: 25px;
     left: 22px;
 }
+
+.card-amination-text {
+    position: absolute;
+    padding: 20px;
+    color: var(--light-grey);
+    opacity: 0;
+    z-index: 1;
+}
+
 
 /* pick-feed-friend */
 #pick-feed-friend {
@@ -476,7 +496,6 @@ a {
 }
 
 /* testimonials */
-
 .testimonials-container {
     display: flex;
     flex-direction: column;
@@ -609,7 +628,6 @@ a {
     right: -165px;
     z-index: -1;
 }
-
 
 /* Footer */
 footer {
