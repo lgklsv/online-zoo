@@ -3,6 +3,7 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
+    --footer-black: #111115;
     --green: #4B9200;
     --orang: #F9804B;
     --orang-grad: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -13,6 +14,7 @@
     --rad: #D31414;
     --black-blue: #333B41;
     --gray: #767474;
+    --icons-grey: rgba(196, 196, 196, 0.5);
     --gray-smoky: #ABABAB;
     --light-grey: #F1F3F2;
     --frosted-glass-white: rgba(253, 253, 255, 0.52);
@@ -612,5 +614,61 @@ a {
 /* Footer */
 footer {
     height: 443px;
-    background: #000000;
+    background: var(--footer-black);
+}
+ 
+.footer-container {
+    height: 443px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials {  
+    align-self: flex-start;
+    margin-top: 41px;
+}
+
+.footer-btn {
+    margin-top: 68px;
+    margin-bottom: 44px;
+}
+
+.socials-links-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    background: var(--icons-grey);
+    border-radius: 50%;
+}
+
+.socials-link-text {
+    color: var(--white);
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.socials-link-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.socials-link-link:hover .socials-links-icon-container {
+    background: var(--green);
+}
+
+.socials-link-link:hover .socials-link-text {
+    color: var(--green);
+}
+
+.socials-link-link {
+    display: flex;
 }
