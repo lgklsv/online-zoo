@@ -402,7 +402,7 @@ a {
     line-height: 120%;
     text-align: center;
     font-size: 3rem;
-    color: #FE9013;
+    color: var(--orang2);
     margin-top: 41px;
 }
 
@@ -471,7 +471,7 @@ a {
 .box-icon {
     background-color: var(--white);
     border-radius: 5px;
-    border: 1px solid #FE9013;
+    border: 1px solid var(--orang2);
     width: 168px;
     height: 168px;
     display: flex;
@@ -493,7 +493,7 @@ a {
 .orang-underline-link {
     text-decoration: none;
     color: var(--black-blue);
-    border-bottom: 1px solid #FE9013;
+    border-bottom: 1px solid var(--orang2);
 }
 
 /* testimonials */
@@ -610,7 +610,7 @@ a {
     width: 115.19px;
     height: 6px;
     border-radius: 5px;
-    background: #FE9013;
+    background: var(--orang2);
 }
 
 .slight-round-btn {
@@ -842,7 +842,7 @@ footer {
 }
 
 .donate-h3 {
-    color: #FE9013;
+    color: var(--orang2);
     font-weight: 400;
     line-height: 130%;
     font-size: 2.25rem;
