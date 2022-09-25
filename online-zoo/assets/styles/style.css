@@ -170,7 +170,7 @@ a {
     height: 54px;
     font-style: normal;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 140%;
     border-radius: 25px;
     color: var(--white);
@@ -229,7 +229,7 @@ a {
 
 .hero-header-h3 {
     font-weight: 400;
-    margin-top: 1rem;
+    margin-bottom: 16px;
     font-size: 1.5rem;
     line-height: 120%;
     color: var(--black-blue);
@@ -240,11 +240,16 @@ a {
     line-height: 130%;
     color: var(--black-blue);
     font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.text-small-margin {
+    margin-bottom: 0;
 }
 
 .flower-foto {
     position: absolute;
-    right: -110px;
+    right: -98px;
     top: 792px;   
 }
 
@@ -299,20 +304,18 @@ a {
 }
 
 .card-item-title {
-    padding: 8px 12px 14px 16px;
+    padding: 4px 12px 13px 13px;
 }
 
 .animal-name {
     text-transform: uppercase;
     color: var(--black);
     font-size: 1rem;
-    line-height: 140%;
     font-weight: 500;
 }
 
 .animal-subtitle {
     font-weight: 300;
-    line-height: 120%;
     font-size: 15px;
 }
 
@@ -324,13 +327,13 @@ a {
 .palm-foto {
     position: absolute;
     left: -588px;
-    top: 2166px;
+    top: 2149px;
 }
 
 .strelitzia {
     position: absolute;
     right: 0;
-    top: 2351px;
+    top: 2335px;
 }
 
 .buttons-container {
@@ -351,14 +354,14 @@ a {
 
 .next {
     position: absolute;
-    top: 40.4%;
-    right: -84px;
+    top: 40%;
+    right: -80px;
 }
 
 .prev {
     position: absolute;
-    top: 40.4%;
-    left: -84px;
+    top: 40%;
+    left: -81px;
 }
 
 .arrow-position {
@@ -395,6 +398,7 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 31px;
 }
 
 .pick-feed-friend-h2 {
@@ -480,7 +484,7 @@ a {
 }
 
 .arrow-big {
-    margin-bottom: 70px;
+    margin-bottom: 86px;
 }
 
 .undebox-text {
@@ -494,6 +498,7 @@ a {
     text-decoration: none;
     color: var(--black-blue);
     border-bottom: 1px solid var(--orang2);
+    padding-bottom: 5px;
 }
 
 /* testimonials */
@@ -544,6 +549,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 5px;
 }
 
 .testimonials-right-head {
@@ -625,8 +631,8 @@ a {
 
 .leav_foto {
     position: absolute;
-    top: 4270.88px;
-    right: -165px;
+    top: 4257.88px;
+    right: -163px;
     z-index: -1;
 }
 
@@ -645,7 +651,7 @@ footer {
 
 .socials {  
     align-self: flex-start;
-    margin-top: 41px;
+    margin-top: 42px;
 }
 
 .footer-btn {
@@ -665,11 +671,10 @@ footer {
 
 .socials-link-text {
     color: var(--white);
-    line-height: 140%;
     font-weight: 400;
     font-size: 1rem;
     margin-left: 12px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 .socials-link-item {
@@ -697,6 +702,12 @@ footer {
     margin-bottom: 50px;
 }
 
+.footer-p {
+    margin-bottom: -3px;
+    margin-right: -5px;
+    margin-left: 3px;
+}
+
 .newsletter {
     display: flex;
     flex-direction: column;
@@ -710,12 +721,13 @@ footer {
     line-height: 120%;
     font-size: 1.5rem;
     margin-bottom: 14px;
+    margin-top: 3px;
 }
 
 .email-input {
     height: 42px;
     width: 228px;
-    padding-left: 10px;
+    padding-left: 8px;
     background: transparent;
     border: 0.7px solid var(--orang);
     border-radius: 2px;
@@ -723,7 +735,7 @@ footer {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
-
+    margin-right: -4px;
 }
 
 .email-input::placeholder {
@@ -791,7 +803,7 @@ footer {
 
 .footer-navbar-list-item {
     margin-right: 0;
-    margin-left: 58px;
+    margin-left: 60px;
 }
 
 .footer-credentials-link:hover .footer-credentials-text{
@@ -846,7 +858,7 @@ footer {
     font-weight: 400;
     line-height: 130%;
     font-size: 2.25rem;
-    margin-top: 40px;
+    margin-top: 44px;
     margin-bottom: 60px;
 }
 
@@ -856,10 +868,16 @@ footer {
 
 .pick-feed-friend-h2-donate {
     margin: 0;
+    margin-right: 13px;
 }
 .pick-feed-friend-h4-donate {
     margin-left: 0;
     margin-bottom: 60px;
+    margin-top: 23px;
+}
+
+.big-panda-icon {
+    margin-right: 12px;
 }
 
 .donate-section-container-inner {
@@ -873,7 +891,7 @@ footer {
 .diets-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .diets-for-day {
@@ -888,6 +906,7 @@ footer {
     line-height: 80%;
     font-size: 4.5rem;
     text-transform: uppercase;
+    margin-top: 48px;
 }
 
 .diets-text {
@@ -900,8 +919,9 @@ footer {
 
 .multiply-sign {
     margin-left: 11px;
-    margin-right: 64px;
-    margin-bottom: 32px;
+    margin-right: 67px;
+    margin-top: 22px;
+    scale: 1.1;
 }
 
 .diets-text-bl {
@@ -948,7 +968,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 6px;
+    margin-top: 7px;
 }
 
 .progress-bar-amount-cash {
@@ -1090,6 +1110,7 @@ input[type=number] {
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
+    margin-right: 15px;
 }
 .custom-radio-green:checked + label:before,
 .custom-radio-green:not(:checked) + label:before {
