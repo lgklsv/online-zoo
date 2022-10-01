@@ -288,6 +288,7 @@ a {
 
 .card-img {
     border-radius: 4px 4px 0 0; 
+    width: 100%;
 }
 
 .animals-grid-btn {
@@ -390,7 +391,7 @@ a {
 
 .pick-feed-friend-container {
     height: 835px;
-    width: 1160px;
+    width: 100%;
     background: var(--frosted-glass-white);
     backdrop-filter: blur(2px);
     border-radius: 20px;
@@ -516,7 +517,7 @@ a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-top: 47px;
+    padding-top: 47px;
     margin-bottom: 21px;
 }
 
@@ -1150,4 +1151,180 @@ input[type=number] {
 
 .donate-bottom-text {
     margin-top: 0;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1175px) {
+
+    .container {
+        max-width: 940px;
+    }
+
+    .navbar {
+        z-index: 2;
+    }
+
+    #watch-animal-online {
+        height: 584px;
+        background-position: center center;
+    }
+
+    .orange-circle {
+        width: 367px;
+        height: 367px;
+        left: calc(50% - 367px/2 + 139.5px);
+        top: 69px;
+        z-index: 1;
+
+    }
+
+    .watch-animal-online-header {
+        width: 400.25px;
+        height: 320px;
+        left: calc(50% - 400.25px/2 + 214.12px);
+        top: 122.8px;
+        font-weight: 700;
+        font-size: 5.313rem;
+        z-index: 2;
+    }
+
+    .watch-btn {
+        left: calc(50% - 298px/2 + 214px);
+        top: 483px;   
+    }
+
+    .navbar-list-link {
+        margin-right: 48px;
+    }
+
+    .credentials-text {
+        margin-right: 0;
+    }
+
+    .hero-container {
+        margin-top: 109px;
+        margin-bottom: 142px;
+    }
+
+    .hero-right {
+        margin-left: 31px;
+    }
+
+    .bamboo-cap-img {
+        width: 455px;
+        height: 408px;
+        object-fit: cover;
+    }
+
+    .flower-foto {
+        display: none;
+    }
+
+    .animals-grid {
+        row-gap: 92px;
+    }
+
+    .prev {
+        top: 39.5%;
+        left: 328px;
+    }
+
+    .next {
+        top: 39.5%;
+        right: 328px;
+    }
+
+    .animals-grid-btn {
+        margin-bottom: 140px;
+    }
+
+    .palm-foto {
+        width: 386px;
+        height: 202px;
+        left: -192px;
+        top: 2126px;
+        z-index: -1;
+    }
+
+    .strelitzia {
+        width: 241px;
+        height: 180px;
+        top: 2135px;
+        z-index: -1;
+    }
+
+    #pick-feed-friend {
+        height: 876px;
+    }
+
+    .pick-feed-friend-h2 {
+        margin-top: 30px;
+    }
+
+    .pick-feed-friend-container {
+        height: 796px;
+    }
+
+    .pick-feed-friend-h4, .pick-feed-friend-reg-text, .pick-feed-friend-stong-text {
+        margin-left: 49px;
+        margin-top: 20px;
+    }
+
+    .pick-feed-friend-reg-text, .pick-feed-friend-stong-text {
+        margin-right: 78px;
+    }
+
+    .pick-feed-friend-reg-text {
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+    .pick-feed-friend-scheme {
+        margin-bottom: 70px;
+    }
+
+    .testimonials-header {
+        margin-top: 100px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+        height: 435px;
+        overflow-y: hidden;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-bottom: 10px;
+        padding-top: 30px;
+    }
+
+    .progress-bar {
+        width: 390px;
+        margin-bottom: 52px;
+    }
+
+    .testimonials-btn {
+        margin-bottom: 140px;
+    }
+
+    .leav_foto {
+        width: 239.98px;
+        height: 235.62px;
+        right: -95px;
+        top: 3851.63px;
+    }
+
+    .footer-navbar-list-item  {
+        margin-left: 0;
+    }
+
+    .m-r-0 {
+        margin-right: 0;
+    }
+
+    .footer-p {
+        width: 80px;
+    }
+
 }
