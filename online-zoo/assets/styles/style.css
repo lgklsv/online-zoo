@@ -328,13 +328,13 @@ a {
 .palm-foto {
     position: absolute;
     left: -588px;
-    top: 2149px;
+    top: 2146px;
 }
 
 .strelitzia {
     position: absolute;
     right: 0;
-    top: 2334px;
+    top: 2331px;
 }
 
 .buttons-container {
@@ -646,18 +646,29 @@ footer {
 .footer-container {
     height: 443px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-btn {
+    margin-top: 32px;
+    margin-bottom: 44px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.logo-email {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.socials {  
-    align-self: flex-start;
-    margin-top: 42px;
-}
-
-.footer-btn {
-    margin-top: 68px;
-    margin-bottom: 44px;
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .socials-links-icon-container {
@@ -699,21 +710,15 @@ footer {
 }
 
 .footer-navbar {
-    align-self: flex-end;
-    margin-bottom: 50px;
+    margin-bottom: 14px;
+    align-self: end;
+    margin-left: 49px;
 }
 
 .footer-p {
     margin-bottom: -3px;
     margin-right: -5px;
     margin-left: 3px;
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
-    margin-top: 40px;
 }
 
 .subscribe {
@@ -785,8 +790,8 @@ footer {
 }
 
 .footer-credentials {
-    align-self: flex-end;
-    margin-top: 216px;
+    align-self: end;
+    margin-bottom: 10px;
 }
 
 .footer-credentials-text {
@@ -1155,8 +1160,14 @@ input[type=number] {
 
 
 /* MEDIA QUERIES */
+@media (max-width: 1500px) {
+    .flower-foto {
+        display: none;
+    }
+}
 
-@media (max-width: 1175px) {
+
+@media (max-width: 1375px) {
 
     .container {
         max-width: 940px;
@@ -1216,10 +1227,6 @@ input[type=number] {
         width: 455px;
         height: 408px;
         object-fit: cover;
-    }
-
-    .flower-foto {
-        display: none;
     }
 
     .animals-grid {
