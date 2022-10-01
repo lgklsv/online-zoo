@@ -833,7 +833,7 @@ footer {
 }
 
 #donate-section {
-    height: 1482px;
+    padding-bottom: 150px;
     background: var(--orange-grad);
 }
 
@@ -949,7 +949,7 @@ footer {
 
 .progress-bar-amount-line {
     height: 2px;
-    width: 910px;
+    width: 93%;
     background: #72828E;
     display: flex;
     justify-content: space-between;
@@ -1168,7 +1168,6 @@ input[type=number] {
 
 
 @media (max-width: 1375px) {
-
     .container {
         max-width: 940px;
     }
@@ -1334,4 +1333,56 @@ input[type=number] {
         width: 80px;
     }
 
+    /* DONATE PAGE */
+    #panda-background {
+        height: 390px;
+    }
+
+    #donate-section {
+        padding-bottom: 0;
+    }
+
+    .pick-feed-friend-container-donate {
+        height: 918px;
+    }
+
+    .pick-feed-friend-h2-donate {
+        margin-top: 20px;
+    }
+
+    .donate-h3 {
+        margin-bottom: 40px;
+    }
+
+    .donate-section-container-inner  {
+        padding-top: 0;
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+
+    .pick-feed-friend-h4-donate {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 60px;
+    }
+
+    .progress-bar-amount-line {
+        width: 97%;
+    }
+
+    .progress-bar-amount-dot-container:first-child {
+        display: none;
+    }
+
+    .progress-bar-amount-dot-container:nth-child(2) {
+        padding-left: 0;
+    }
+
+    .progress-bar-amount-cash:first-child {
+        display: none;
+    }
+
+    .progress-bar-amount-cash {
+        width: 53px;
+    }
 }
