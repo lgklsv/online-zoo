@@ -89,6 +89,10 @@ a {
     margin-right: 0;
 }
 
+.hamburger-menu-container {
+    display: none;
+}
+
 /* Logo */
 .logo {
     position: relative;
@@ -1407,6 +1411,16 @@ input[type=number] {
     .card-amination-text {
         font-size: 0.9rem;
     }
+
+    .next {
+        top: 39%;
+        right: 282px;
+    }
+
+    .prev {
+        top: 39%;
+        left: 282px;
+    }
 }
 
 /* TABLET */
@@ -1724,6 +1738,26 @@ input[type=number] {
         top: 22.64px;
         z-index: 1;
     }
+
+
+    /* HAMBURGER */
+
+    .hamburger-menu-container {
+        width: 18px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-line {
+        height: 2px;
+        width: 100%;
+        background-color: var(--light-grey);
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 2px;
+    }
 }
-
-
