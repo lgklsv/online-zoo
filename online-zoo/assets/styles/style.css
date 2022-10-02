@@ -1051,8 +1051,8 @@ input[type=number] {
 }
 
 .input-amount {
-    width: 268px;
-    height: 54px;
+    width: 100%;
+    height: 100%;
     border-radius: 2px;
     border: 1px solid #929699;
     background: transparent;
@@ -1739,9 +1739,85 @@ input[type=number] {
         z-index: 1;
     }
 
+    /* DONATE TABLET */
+    #panda-background {
+        height: 335px;
+        background-position: 36% 64%;
+    }
+
+    .donate-h2 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .donate-main-text {
+        margin-top: 20px;
+    }
+
+    .donate-h3 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .pick-feed-friend-h4-donate {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .pick-feed-friend-container-donate {
+        height: 918px;
+    }
+
+    .donate-amount-container {
+        width: 180px;
+    }
+
+    .progress-bar-amount {
+        width: 118.5%;
+        margin-top: 7px;
+    }
+
+    .progress-bar-amount-dot-container:nth-child(2), .progress-bar-amount-dot-container:nth-child(3),
+    .progress-bar-amount-cash:nth-child(2),  .progress-bar-amount-cash:nth-child(3){
+        display: none;
+    }
+
+    .progress-bar-amount-dot-container:nth-child(4) {
+        padding-left: 0;
+    }
+
+    .progress-bar-amounts {
+        width: 114.5%;
+    }
+
+    .progress-bar-amount-line {
+        width: 90%;
+    }
+
+    .progress-bar-amount-dot-active-tablet::after {
+        content: url(../../assets/icons/roller_icon.svg);
+        position: absolute;
+        top: -7px;
+        left: -5px;
+    }
+
+    .progress-bar-amount-cash-active-tablet {
+        color: var(--orang2);
+    }
+    
+    .pick-feed-friend-container-donate {
+        margin-bottom: 46px;
+    }
+
+    .diets-text-bl {
+        margin-left: -30px;
+    }
+
+    .diets-container {
+        width: 110%;
+    }
 
     /* HAMBURGER */
-
     .hamburger-menu-container {
         width: 18px;
         height: 20px;
