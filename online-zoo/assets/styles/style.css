@@ -2113,6 +2113,20 @@ input[type=number] {
 
 @media (max-width: 420px) {
     .container, #pick-feed-spec-container {
+        max-width: 350px;
+    }
+
+    .palm-foto {
+        top: 1720px;
+    }
+
+    .strelitzia {
+        top: 1720px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container, #pick-feed-spec-container {
         max-width: 300px;
     }
 
