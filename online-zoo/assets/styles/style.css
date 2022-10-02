@@ -1870,9 +1870,11 @@ input[type=number] {
     }
 }
 
+
+
 @media (max-width: 620px) {
-    .container {
-        max-width: 300px;
+    .container, #pick-feed-spec-container {
+        max-width: 500px;
     }
 
     #watch-animal-online {
@@ -1938,13 +1940,13 @@ input[type=number] {
         width: 138px;
         height: 72px;
         left: -81px;
-        top: 1514px;
+        top: 2314px;
     }
 
     .strelitzia {
         width: 85px;
         height: 71px;
-        top: 1519px;
+        top: 2320px;
         right: -19px;
     }
 
@@ -1964,8 +1966,8 @@ input[type=number] {
         margin-top: 10px;
     }
 
-    #pick-feed-spec-container {
-        max-width: 300px;
+    .pick-feed-friend-container {
+        width: 100%;
     }
 
     .pick-feed-friend-scheme {
@@ -2035,6 +2037,7 @@ input[type=number] {
 
     .footer-navbar {
         order: 3;
+        align-self: center;
     }
 
     .footer-credentials {
@@ -2055,11 +2058,13 @@ input[type=number] {
 
     .footer-btn {
         margin-bottom: -20px;
+        align-self: center;
     }
 
     .socials-links {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         order: 1;
         top: 20%;
         left: 7%;
@@ -2068,10 +2073,6 @@ input[type=number] {
     .socials-link-item {
         margin-bottom: 0;
         margin-right: 30px;
-    }
-
-    .socials-link-item:first-child {
-        margin-left: 30px;
     }
 
     .tablet-footer-logo {
@@ -2093,5 +2094,33 @@ input[type=number] {
     .footer-logo-bamboo-icon {
         left: 74.23px;
         top: -4.36px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container, #pick-feed-spec-container {
+        max-width: 400px;
+    }
+
+    .palm-foto {
+        top: 1915px;
+    }
+
+    .strelitzia {
+        top: 1920px;
+    }
+}
+
+@media (max-width: 420px) {
+    .container, #pick-feed-spec-container {
+        max-width: 300px;
+    }
+
+    .palm-foto {
+        top: 1514px;
+    }
+
+    .strelitzia {
+        top: 1519px;
     }
 }
