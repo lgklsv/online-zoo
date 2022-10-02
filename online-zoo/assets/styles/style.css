@@ -2095,6 +2095,110 @@ input[type=number] {
         left: 74.23px;
         top: -4.36px;
     }
+
+    /* DONATE PAGE */
+    #panda-background {
+        height: 187px;
+    }
+
+    .donate-main-text {
+        font-weight: 400;
+    }
+
+    .donate-h3 {
+        font-size: 1.5rem;
+    }
+
+    .pick-feed-friend-container-donate {
+        margin-top: 0;
+        height: 591px;
+    }
+
+    .donate-section-container-inner {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .pick-feed-friend-h4-donate {
+        font-size: 1rem;
+    }
+
+    .big-panda-icon {
+        width: 160.15px;
+        height: 138.72px;
+        margin-right: -5px;
+    }
+
+    .diets-number {
+        font-size: 2.5rem;
+    }
+
+    .diets-text {
+        font-size: 0.563rem;
+    }
+
+    .multiply-sign {
+        width: 7.89px;
+        height: 7.89px;
+        margin-left: 10px;
+        margin-right: 33px;
+    }
+
+    .donate-form-container {
+        margin-top: 25px;
+    }
+
+    .progress-bar-amount-cash {
+        font-size: 0.813rem;
+        width: 33px;
+    }
+
+    .progress-bar-amounts, .progress-bar-amount {
+        width: 100%;
+    }
+
+    .progress-bar-amounts {
+        margin-left: 10px;
+    }
+
+    .progress-bar-amount {
+        height: 13px;
+    }
+
+    .progress-bar-amount-line {
+        height: 1px;
+    }
+
+    .diets-text-bl {
+        margin-top: 4px;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .donate-amount-container {
+        height: 42px;
+    }
+
+    .currency-sign {
+        top: 6px;
+    }
+
+    .donate-bottom-text {
+        font-size: 0.99rem;
+    }
+
+    .progress-bar-amount-dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .progress-bar-amount-dot-active-tablet::after {
+        content: url(../../assets/icons/roller_icon.svg);
+        position: absolute;
+        top: -7px;
+        left: -7px;
+        scale: 0.6;
+    }
 }
 
 @media (max-width: 550px) {
