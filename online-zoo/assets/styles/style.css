@@ -115,7 +115,7 @@ a {
     z-index: 2;
 }
 
-#logo-bamboo-icon {
+.logo-bamboo-icon {
     position: absolute;
     color: var(--white);
     left: 9.23px;
@@ -486,6 +486,10 @@ a {
 
 .arrow-big {
     margin-bottom: 86px;
+}
+
+.arrow-green {
+    display: none;
 }
 
 .undebox-text {
@@ -1336,6 +1340,7 @@ input[type=number] {
     /* DONATE PAGE */
     #panda-background {
         height: 390px;
+        background-position: center center;
     }
 
     #donate-section {
@@ -1386,3 +1391,339 @@ input[type=number] {
         width: 53px;
     }
 }
+
+@media (max-width: 980px) {
+    .container {
+        max-width: 820px;
+    }
+
+    .hero-header-h2 {
+        font-size: 2.3rem;
+    }
+    .hero-container {
+        margin-bottom: 180px;
+    }
+
+    .card-amination-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* TABLET */
+@media (max-width: 840px) {
+    .container {
+        max-width: 600px;
+    }
+
+    .navbar-container {
+        height: 34px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
+
+    .credentials {
+        display: none;
+    }
+
+    .logo {
+        border: none;
+        width: 46.93px;
+        height: 29.03px;
+    }
+
+    .logo-text {
+        font-size: 12px;
+        line-height: 120%;
+        width: 46.93px;
+        height: 29.03px;
+    }
+
+    .logo-bamboo-icon {
+        scale: 0.6;
+        left: 2.2300000000000004px;
+        top: 10.64px;
+    }
+
+    #watch-animal-online {
+        width: 100%;
+        height: 339px;
+    }
+
+    .orange-circle {
+        width: 237.6px;
+        height: 237.6px;
+        left: calc(50% - 237.6px/2 + 130.44px);
+        top: 44.23px;
+    }
+
+    .watch-animal-online-header {
+        width: 255.64px;
+        height: 204.38px;
+        left: calc(50% - 255.64px/2 + 176.76px);
+        top: 82.04px;
+        font-size: 54.2894px;
+        line-height: 75%;
+    }
+
+    .watch-btn {
+        left: calc(50% - 298px/2 - 151px);
+        top: 245px;
+    }
+
+    .hero-container{
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    .hero-header-h2 {
+        font-weight: 400;
+        font-size: 3rem;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .bamboo-cap-img {
+        display: none;
+    }
+
+    .text-small {
+        margin-right: 84px;
+    }
+
+    .flower-foto {
+        display: block;
+        width: 231px;
+        height: 476px;
+        top: 338px;
+        right: -106px;
+    }
+
+    .animals-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 60px;
+    }
+
+    .next {
+        right: 225px;
+        top: 40%;
+    }
+
+    .prev {
+        top: 40%;
+        left: 225px;
+    }
+
+
+    .card-item:nth-child(5) {
+        display: none;
+    }
+
+    .card-item:nth-child(6) {
+        display: none;
+    }
+
+    .animal-name {
+        font-size: 0.75rem;
+    }
+    .animal-subtitle {
+        font-size: 0.688rem;
+    }
+
+    .animals-grid-btn {
+        margin-bottom: 100px;
+    }
+
+    .palm-foto {
+        left: -247px;
+        top: 1605px;
+    }
+
+    .strelitzia {
+        width: 175px;
+        height: 131px;
+        top: 1672px;
+    }
+
+    #pick-feed-spec-container {
+        max-width: 100%;
+    }
+
+    .pick-feed-friend-h2 {
+        font-size: 2.625rem;
+    }
+
+    .pick-feed-friend-h4 {
+        font-size: 1.375rem;
+    }
+
+    .pick-feed-friend-h4, .pick-feed-friend-reg-text, .pick-feed-friend-stong-text {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .pick-feed-friend-reg-text {
+        margin-bottom: 30px;
+    }
+
+    .pick-feed-friend-scheme {
+        margin: 20px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .arrow-big {
+        display: none;
+    }
+
+    .card-icon {
+        margin-left: 21px;
+        margin-right: 21px;
+    }
+
+    .arrow-green {
+        display: block;
+        position: absolute;
+        
+    }
+    .arrow-green-left {
+        top: -15px;
+        left: 170px;
+    }
+
+    .arrow-green-right {
+        top: -15px;
+        right: 170px;
+    }
+
+    .pick-feed-friend-container {
+        height: 741px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #pick-feed-friend {
+        height: 781px;
+    }
+
+    .testimonials-header {
+        margin-top: 60px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .testimonials-card {
+        height: 109px;
+    }
+
+    .testimonials-card-inner {
+        height: 100px;
+    }
+
+    .progress-bar {
+        display: none;
+    }
+
+    .testimonials-btn {
+        align-self: center;
+        margin-bottom: 80px;
+    }
+
+    .testim-btn {
+        width: 240px;
+    }
+
+    .leav_foto {
+        width: 149.88px;
+        height: 147.15px;
+        right: -63px;
+        top: 3170.63px;
+    }
+
+    .socials-link-text, .newsletter-email-sub-container {
+        display: none;
+    }
+
+    .footer-navbar-list {
+        display: flex;
+    }
+
+    .footer-container {
+        position: relative;
+    }
+
+    .socials-links {
+        position: absolute;
+        top: 13px;
+        right: 0px;
+    }
+
+    .socials-link-item {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        height: 282px;
+    }
+
+    .footer-p {
+        width: 80px;
+    }
+
+    .footer-navbar {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .footer-credentials {
+        margin-bottom: 0;
+    }
+
+    .footer-container {
+        height: 282px;
+    }
+
+    .footer-btn {
+        margin-top: 0px;
+        margin-bottom: 55px;
+    }
+
+    .tablet-footer-logo {
+        position: relative;
+        border-radius: 2px;
+        border: 1px solid var(--white);
+        width: 82px;
+        height: 52px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 63px;
+    }
+    
+    .footer-logo-text {
+        position: relative;
+        color: var(--white);
+        font-size: 1.188rem;
+        line-height: 23px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        width: 72.49px;
+        height: 44.91px;
+        z-index: 2;
+    }
+    
+    .footer-logo-bamboo-icon {
+        position: absolute;
+        color: var(--white);
+        left: 9.23px;
+        top: 22.64px;
+        z-index: 1;
+    }
+}
+
+
