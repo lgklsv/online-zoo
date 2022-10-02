@@ -27,10 +27,6 @@
     padding: 0;
 }
 
-* {
-    /* outline: 1px solid red; */
-}
-
 html {
     font-family: 'Roboto', sans-serif;
     background: var(--white);
@@ -61,6 +57,8 @@ a {
 .navbar {
     background-color: var(--black);
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .navbar-container {
@@ -146,6 +144,7 @@ a {
     position: relative;
     height: 780px;
     width: 100%;
+    margin-top: -80px;
     background-image: url(../../assets/images/Giant\ Panda.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -274,10 +273,14 @@ a {
 .flower-foto {
     position: absolute;
     right: -98px;
-    top: 792px;   
+    top: -110px;   
 }
 
 /* Animasls grid section */
+#animals-grid-section {
+    position: relative;
+}
+
 .animals-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -351,14 +354,14 @@ a {
 
 .palm-foto {
     position: absolute;
-    left: -588px;
-    top: 2146px;
+    left: -592px;
+    top: 643px;
 }
 
 .strelitzia {
     position: absolute;
     right: 0;
-    top: 2331px;
+    top: 828px;
 }
 
 .buttons-container {
@@ -531,12 +534,17 @@ a {
 }
 
 /* testimonials */
+#testimonials {
+    position: relative;
+}
+
 .testimonials-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .testimonials-header {
     margin-top: 140px;
 }
@@ -660,8 +668,8 @@ a {
 
 .leav_foto {
     position: absolute;
-    top: 4257.88px;
-    right: -163px;
+    top: 645px;
+    right: -165px;
     z-index: -1;
 }
 
@@ -687,13 +695,7 @@ footer {
     margin-bottom: 40px;
 }
 
-.logo-email {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-bottom {
+.logo-email, .footer-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -850,7 +852,6 @@ footer {
 /* DONTATE PAGE */
 .navbar-donate {
     position: relative;
-
 }
 
 #panda-background {
@@ -1186,14 +1187,12 @@ input[type=number] {
     margin-top: 0;
 }
 
-
 /* MEDIA QUERIES */
 @media (max-width: 1500px) {
     .flower-foto {
         display: none;
     }
 }
-
 
 @media (max-width: 1375px) {
     .container {
@@ -1278,14 +1277,14 @@ input[type=number] {
         width: 386px;
         height: 202px;
         left: -192px;
-        top: 2126px;
+        top: 868px;
         z-index: -1;
     }
 
     .strelitzia {
         width: 241px;
         height: 180px;
-        top: 2135px;
+        top: 891px;
         z-index: -1;
     }
 
@@ -1346,7 +1345,7 @@ input[type=number] {
         width: 239.98px;
         height: 235.62px;
         right: -95px;
-        top: 3851.63px;
+        top: 685.6300000000001px;
     }
 
     .footer-navbar-list-item  {
@@ -1441,6 +1440,15 @@ input[type=number] {
         top: 39%;
         left: 282px;
     }
+
+    .palm-foto {
+        top: 824px;
+    }
+
+    .strelitzia {
+        top: 847px;
+    }
+
 }
 
 /* TABLET */
@@ -1453,11 +1461,7 @@ input[type=number] {
         height: 34px;
     }
 
-    .navbar-list {
-        display: none;
-    }
-
-    .credentials {
+    .navbar-list, .credentials {
         display: none;
     }
 
@@ -1483,6 +1487,7 @@ input[type=number] {
     #watch-animal-online {
         width: 100%;
         height: 339px;
+        margin-top: -34px;
     }
 
     .orange-circle {
@@ -1554,7 +1559,6 @@ input[type=number] {
         left: 225px;
     }
 
-
     .card-item:nth-child(5) {
         display: none;
     }
@@ -1576,13 +1580,13 @@ input[type=number] {
 
     .palm-foto {
         left: -247px;
-        top: 1605px;
+        top: 770px;
     }
 
     .strelitzia {
         width: 175px;
         height: 131px;
-        top: 1672px;
+        top: 841px;
     }
 
     #pick-feed-spec-container {
@@ -1683,7 +1687,7 @@ input[type=number] {
         width: 149.88px;
         height: 147.15px;
         right: -63px;
-        top: 3170.63px;
+        top: 583.63px;
     }
 
     .socials-link-text, .newsletter-email-sub-container {
