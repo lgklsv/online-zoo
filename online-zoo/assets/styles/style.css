@@ -1407,7 +1407,12 @@ input[type=number] {
     }
 
     .donate-main-text {
-        margin-top: 29px;
+        margin-top: 31px;
+        font-size: 0.8rem;
+    }
+
+    .donate-h2 {
+        margin-right: 94px;
     }
 
     .donate-h3 {
@@ -1421,6 +1426,9 @@ input[type=number] {
         padding-right: 47px;
     }
 
+    .progress-bar-amount {
+        width: 95%;
+    }
     .pick-feed-friend-h4-donate {
         margin: 0;
         margin-top: 10px;
@@ -1479,11 +1487,11 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 824px;
+        top: 831px;
     }
 
     .strelitzia {
-        top: 847px;
+        top: 850px;
     }
 
 }
@@ -1531,7 +1539,7 @@ input[type=number] {
     #watch-animal-online {
         width: 100%;
         height: 373px;
-        margin-top: 34px;
+        margin-top: 0;
     }
 
     .orange-circle {
@@ -1839,10 +1847,12 @@ input[type=number] {
     .donate-h2 {
         font-size: 1.5rem;
         margin-top: 30px;
+        margin-right: 28px;
     }
 
     .donate-main-text {
         margin-top: 20px;
+        font-size: 1rem;
     }
 
     .donate-h3 {
@@ -1857,8 +1867,11 @@ input[type=number] {
 
     .pick-feed-friend-h4-donate {
         margin-bottom: 50px;
-        margin-top: 24px;
+        margin-top: 22px;
         text-align: center;
+        margin-right: -1px;
+        margin-left: 0;
+        font-size: 1.5rem;
     }
 
     .pick-feed-friend-container-donate {
@@ -1949,6 +1962,7 @@ input[type=number] {
 
     #watch-animal-online {
         height: 187px;
+        margin-top: 34px;
     }
 
     .orange-circle {
@@ -2004,6 +2018,8 @@ input[type=number] {
         grid-template-columns: 1fr;
         row-gap: 20px;
         margin-bottom: 20px;
+        margin-right: 15px;
+        margin-top: -18px;
     }
 
     .animals-grid-btn {
@@ -2014,13 +2030,13 @@ input[type=number] {
         width: 138px;
         height: 72px;
         left: -81px;
-        top: 2319px;
+        top: 2259px;
     }
 
     .strelitzia {
         width: 85px;
         height: 71px;
-        top: 2325px;
+        top: 2255px;
         right: -19px;
     }
 
@@ -2178,11 +2194,16 @@ input[type=number] {
 
     .donate-main-text {
         font-weight: 400;
+        margin-top: 11px;
+    }
+
+    .donate-h2 {
+        margin-right: 0;
     }
 
     .donate-h3 {
         font-size: 1.5rem;
-        margin-top: 18px;
+        margin-top: 29px;
         margin-bottom: 27px;
     }
 
@@ -2289,11 +2310,11 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 1920px;
+        top: 1860px;
     }
 
     .strelitzia {
-        top: 1925px;
+        top: 1865px;
     }
 
     .leav_foto {
@@ -2307,11 +2328,11 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 1725px;
+        top: 1665px;
     }
 
     .strelitzia {
-        top: 1725px;
+        top: 1665px;
     }
 }
 
@@ -2321,11 +2342,11 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 1610px;
+        top: 1544px;
     }
 
     .strelitzia {
-        top: 1610px;
+        top: 1544px;
     }
 
     .leav_foto {
@@ -2339,10 +2360,10 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 1519px;
+        top: 1465px;
     }
 
     .strelitzia {
-        top: 1529px;
+        top: 1465px;
     }
 }
