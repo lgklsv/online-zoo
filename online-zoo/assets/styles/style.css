@@ -272,7 +272,7 @@ a {
 .flower-foto {
     position: absolute;
     right: -98px;
-    top: -110px;   
+    top: -128px;   
 }
 
 /* Animasls grid section */
@@ -321,7 +321,7 @@ a {
     display: flex;
     justify-content: center;
     height: 54px;
-    margin-bottom: 100px;
+    margin-bottom: 102px;
 }
 
 .card-item-bottom {
@@ -353,14 +353,14 @@ a {
 
 .palm-foto {
     position: absolute;
-    left: -592px;
-    top: 643px;
+    left: -588px;
+    top: 645px;
 }
 
 .strelitzia {
     position: absolute;
     right: 0;
-    top: 828px;
+    top: 830px;
 }
 
 .buttons-container {
@@ -662,7 +662,7 @@ a {
 
 .testimonials-btn {
     align-self: flex-start;
-    margin-bottom: 180px;
+    margin-bottom: 183px;
 }
 
 .leav_foto {
@@ -1241,11 +1241,19 @@ input[type=number] {
 
     .hero-container {
         margin-top: 109px;
-        margin-bottom: 142px;
+        margin-bottom: 154px;
     }
 
     .hero-right {
         margin-left: 31px;
+    }
+
+    .text-small {
+        margin-bottom: 39px;
+    }
+
+    .text-small-margin {
+        margin-bottom: -6px;
     }
 
     .bamboo-cap-img {
@@ -1256,6 +1264,7 @@ input[type=number] {
 
     .animals-grid {
         row-gap: 92px;
+        margin-bottom: 84px;
     }
 
     .prev {
@@ -1276,14 +1285,14 @@ input[type=number] {
         width: 386px;
         height: 202px;
         left: -192px;
-        top: 868px;
+        top: 871px;
         z-index: -1;
     }
 
     .strelitzia {
         width: 241px;
         height: 180px;
-        top: 891px;
+        top: 894px;
         z-index: -1;
     }
 
@@ -1297,6 +1306,7 @@ input[type=number] {
 
     .pick-feed-friend-container {
         height: 796px;
+        margin-bottom: 19px;
     }
 
     .pick-feed-friend-h4, .pick-feed-friend-reg-text, .pick-feed-friend-stong-text {
@@ -1341,28 +1351,42 @@ input[type=number] {
     }
 
     .leav_foto {
-        width: 239.98px;
-        height: 235.62px;
-        right: -95px;
-        top: 685.6300000000001px;
+        width: 330.98px;
+        height: 322.62px;
+        right: -134px;
+        top: 604.6300000000001px;
+    }
+
+    .footer-container {
+        margin-left: 15px;
     }
 
     .footer-navbar-list-item  {
         margin-left: 0;
+        margin-right: 35px;
+    }
+
+    .logo-email {
+        margin-right: 18px;
     }
 
     .m-r-0 {
         margin-right: 0;
     }
 
+    .footer-navbar {
+        margin-bottom: 14px;
+        margin-left: 86px;
+    }
+
     .footer-p {
-        width: 80px;
+        margin-left: 20px;
     }
 
     /* DONATE PAGE */
     #panda-background {
         height: 390px;
-        background-position: center center;
+        background-position: 29%;
     }
 
     #donate-section {
@@ -1371,14 +1395,20 @@ input[type=number] {
 
     .pick-feed-friend-container-donate {
         height: 918px;
+        margin-bottom: 30px;
     }
 
     .pick-feed-friend-h2-donate {
         margin-top: 20px;
     }
 
+    .donate-main-text {
+        margin-top: 29px;
+    }
+
     .donate-h3 {
         margin-bottom: 40px;
+        margin-top: 46px;
     }
 
     .donate-section-container-inner  {
@@ -1411,6 +1441,10 @@ input[type=number] {
 
     .progress-bar-amount-cash {
         width: 53px;
+    }
+
+    .footer-container-donate {
+        margin-left: 0;
     }
 }
 
@@ -1485,7 +1519,7 @@ input[type=number] {
 
     #watch-animal-online {
         width: 100%;
-        height: 339px;
+        height: 373px;
         margin-top: -34px;
     }
 
@@ -1507,7 +1541,7 @@ input[type=number] {
 
     .watch-btn {
         left: calc(50% - 298px/2 - 151px);
-        top: 245px;
+        top: 278px;
     }
 
     .hero-container{
@@ -1528,14 +1562,19 @@ input[type=number] {
 
     .text-small {
         margin-right: 84px;
+        margin-bottom: 37px;
     }
 
     .flower-foto {
         display: block;
         width: 231px;
         height: 476px;
-        top: -51px;
+        top: -62px;
         right: -102px;
+    }
+
+    .hero-container {
+        margin-bottom: 47px;
     }
 
     .hero-right {
@@ -1578,7 +1617,7 @@ input[type=number] {
     }
 
     .palm-foto {
-        left: -247px;
+        left: -252px;
         top: 770px;
     }
 
@@ -1594,6 +1633,7 @@ input[type=number] {
 
     .pick-feed-friend-h2 {
         font-size: 2.625rem;
+        margin-top: 8px;
     }
 
     .pick-feed-friend-h4 {
@@ -1658,8 +1698,10 @@ input[type=number] {
     }
 
     .testimonials-grid {
+        height: 396px;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
+        gap: 15px;
     }
 
     .testimonials-card {
@@ -1677,6 +1719,7 @@ input[type=number] {
     .testimonials-btn {
         align-self: center;
         margin-bottom: 80px;
+        margin-top: 20px;
     }
 
     .testim-btn {
@@ -1684,10 +1727,10 @@ input[type=number] {
     }
 
     .leav_foto {
-        width: 149.88px;
-        height: 147.15px;
-        right: -63px;
-        top: 583.63px;
+        width: 180.88px;
+        height: 203.15px;
+        right: -73px;
+        top: 532.63px;
     }
 
     .socials-link-text, .newsletter-email-sub-container {
@@ -1700,6 +1743,7 @@ input[type=number] {
 
     .footer-container {
         position: relative;
+        margin-left: 0;
     }
 
     .socials-links {
@@ -1718,6 +1762,8 @@ input[type=number] {
 
     .footer-p {
         width: 80px;
+        margin-left: 0;
+        margin-bottom: 0;
     }
 
     .footer-navbar {
@@ -1735,7 +1781,7 @@ input[type=number] {
 
     .footer-btn {
         margin-top: 0px;
-        margin-bottom: 55px;
+        margin-bottom: 65px;
     }
 
     .tablet-footer-logo {
@@ -1748,6 +1794,7 @@ input[type=number] {
         justify-content: center;
         align-items: center;
         margin-right: 63px;
+        margin-bottom: 35px;
     }
     
     .footer-logo-text {
@@ -1787,12 +1834,18 @@ input[type=number] {
     }
 
     .donate-h3 {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+
+    .pick-feed-friend-h2-donate {
+        font-size: 3rem;
+        margin-top: 31px;
     }
 
     .pick-feed-friend-h4-donate {
         margin-bottom: 50px;
+        margin-top: 24px;
         text-align: center;
     }
 
@@ -1802,6 +1855,11 @@ input[type=number] {
 
     .donate-amount-container {
         width: 180px;
+        height: 40px;
+    }
+
+    .currency-sign {
+        top: 5px;
     }
 
     .progress-bar-amount {
@@ -1908,7 +1966,8 @@ input[type=number] {
 
     .hero-header-h2 {
         font-size: 1.5rem;
-        margin-top: 35px;
+        margin-top: 45px;
+        margin-bottom: 10px;
     }
 
     .flower-foto {
@@ -1920,6 +1979,10 @@ input[type=number] {
 
     .hero-right, .text-small {
         margin-right: 0;
+    }
+
+    .text-small {
+        margin-bottom: 19px;
     }
 
     .prev, .next, .pick-feed-friend-stong-text, .pick-feed-friend-reg-text{
@@ -1940,13 +2003,13 @@ input[type=number] {
         width: 138px;
         height: 72px;
         left: -81px;
-        top: 2314px;
+        top: 2319px;
     }
 
     .strelitzia {
         width: 85px;
         height: 71px;
-        top: 2320px;
+        top: 2325px;
         right: -19px;
     }
 
@@ -2008,13 +2071,14 @@ input[type=number] {
 
     .testimonials-btn {
         margin-bottom: 60px;
+        margin-top: 0;
     }
 
     .leav_foto{
-        width: 77.21px;
-        height: 75.81px;
-        right: -34px;
-        top: 529.63px;
+        width: 115.88px;
+        height: 120.15px;
+        right: -44px;
+        top: 500.63px;
     }
 
     footer, .footer-container {
@@ -2107,11 +2171,14 @@ input[type=number] {
 
     .donate-h3 {
         font-size: 1.5rem;
+        margin-top: 18px;
+        margin-bottom: 27px;
     }
 
     .pick-feed-friend-container-donate {
         margin-top: 0;
         height: 591px;
+        margin-bottom: 21px;
     }
 
     .donate-section-container-inner {
@@ -2127,6 +2194,10 @@ input[type=number] {
         width: 160.15px;
         height: 138.72px;
         margin-right: -5px;
+    }
+
+    .diets-container {
+        margin-top: 16px;
     }
 
     .diets-number {
@@ -2207,11 +2278,15 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 1915px;
+        top: 1920px;
     }
 
     .strelitzia {
-        top: 1920px;
+        top: 1925px;
+    }
+
+    .leav_foto {
+        top: 501.63px;
     }
 }
 
@@ -2221,24 +2296,42 @@ input[type=number] {
     }
 
     .palm-foto {
-        top: 1720px;
+        top: 1725px;
     }
 
     .strelitzia {
-        top: 1720px;
+        top: 1725px;
     }
 }
 
 @media (max-width: 400px) {
     .container, #pick-feed-spec-container {
+        max-width: 320px;
+    }
+
+    .palm-foto {
+        top: 1610px;
+    }
+
+    .strelitzia {
+        top: 1610px;
+    }
+
+    .leav_foto {
+        top: 499.63px;
+    }
+}
+
+@media (max-width: 350px) {
+    .container, #pick-feed-spec-container {
         max-width: 300px;
     }
 
     .palm-foto {
-        top: 1514px;
+        top: 1519px;
     }
 
     .strelitzia {
-        top: 1519px;
+        top: 1529px;
     }
 }
