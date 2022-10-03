@@ -218,6 +218,10 @@ a {
     outline: none;
 }       
 
+.fix-position {
+    position: relative;
+}
+
 /* Hero section */
 #hero-header {
     position: relative;
