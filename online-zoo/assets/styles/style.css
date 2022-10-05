@@ -67,6 +67,7 @@ a {
     justify-content: space-between;
     align-items: center;
 }
+
 .navbar-menu {
     display: flex;
     justify-content: center;
@@ -116,6 +117,7 @@ a {
     justify-content: center;
     align-items: center;
     margin-right: 63px;
+    z-index: -1;
 }
 
 .logo-text {
@@ -1941,6 +1943,7 @@ input[type=number] {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        z-index: 5;
     }
 
     .hamburger-line {
@@ -1949,11 +1952,104 @@ input[type=number] {
         background-color: var(--light-grey);
         display: block;
         border-radius: 5px;
-        margin-bottom: 2px;
+        transition: 0.3s ease;
+    }
+
+    #bar1 {
+        transform: translateY(-4px);
+    }
+      
+    #bar3 {
+        transform: translateY(4px);
+    }
+
+    .change #bar1 {
+        transform: translateY(2px) rotateZ(-45deg);
+        background-color: var(--black-blue);
+    }
+      
+    .change #bar2 {
+        opacity: 0;
+    }
+      
+    .change #bar3 {
+        transform: translateY(-2px) rotateZ(45deg);
+        background-color: var(--black-blue);
+    }
+      
+    .hamburger-navbar {
+        top: -340px;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background-color: #FFFFFF;
+        transition: 0.3s ease;
+        z-index: 2;
+    }
+
+    .hamburger-navbar-change {
+        top: 0px;
+    }
+
+    .hamburger-navbar-list {
+        list-style: none;
+    }
+
+    .hamburger-navbar-list-item {
+        margin-bottom: 15px;
+    }
+
+    .hamburger-navbar-list-link {
+        color: var(--black-blue);
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 140%;
+    }
+
+    .hamburger-navbar-list-link:hover, .hamburger-navbar-list-link-active {
+        color: var(--orang2);
+    }
+
+    .hamburger-logo {
+        border: 1px solid var(--orang2);
+        margin-top: 12.84px;
+        margin-bottom: 33.24px;
+        width: 65.6px;
+        height: 41.6px;
+    }
+
+    .hamburger-text {
+        font-size: 15.2116px;
+        line-height: 120%;
+        width: 57.99px;
+        height: 35.93px;
+    }
+
+    .hamburger-bamboo-icon, .hamburger-text{
+        color: var(--orang2);
+    }
+
+    #hamburger-bamboo-icon {
+        filter: brightness(0) saturate(100%) invert(55%) sepia(96%) saturate(1178%) hue-rotate(350deg) brightness(102%) contrast(99%);
+        top: 17px;
+        left: 7px;
+    }
+
+    .hamburger-navbar-list-item:last-child {
+        margin-bottom: 40px;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, .5);
+        transition: 0.3s ease;
     }
 }
-
-
 
 @media (max-width: 620px) {
     .container, #pick-feed-spec-container {
