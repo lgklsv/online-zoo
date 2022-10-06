@@ -102,9 +102,10 @@ a {
     margin-right: 0;
 }
 
-.hamburger-menu-container {
+.hamburger-menu-container, .hamburger-navbar  {
     display: none;
 }
+
 
 /* Logo */
 .logo {
@@ -300,6 +301,16 @@ a {
     border-radius: 5px;
     transition: transform 0.5s;
     position: relative;
+    animation: scaleDown 0.8s ease-in-out;
+}
+
+@keyframes scaleDown {
+    0% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .card-item:hover {
@@ -401,6 +412,7 @@ a {
     position: absolute;
     top: 25px;
     left: 22px;
+    pointer-events: none;
 }
 
 .card-amination-text {
@@ -410,7 +422,6 @@ a {
     opacity: 0;
     z-index: 1;
 }
-
 
 /* pick-feed-friend */
 #pick-feed-friend {
@@ -1978,6 +1989,7 @@ input[type=number] {
     }
       
     .hamburger-navbar {
+        display: block;
         top: -340px;
         position: fixed;
         width: 100%;
