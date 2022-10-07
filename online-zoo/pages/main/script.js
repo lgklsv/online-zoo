@@ -118,3 +118,16 @@ function generateCard(el) {
     </div>
 `;
 }
+
+
+const sliderInput = document.getElementById('slider');
+const slides = document.querySelectorAll('.testimonials-card')
+
+sliderInput.addEventListener('change', function() {
+    let change = sliderInput.value;
+    let index = (change * 8) / 100;
+    let userWidth = window.innerWidth <= 1375 &&  window.innerWidth >= 980 ? 110 : 111;
+    slides.forEach((slide) => {
+        slide.style.transform = `translateX(-${index * userWidth}%)`;
+    })
+})
