@@ -1,3 +1,4 @@
+// HAMBURGER MENU
 const hamburgerElement = document.querySelector('.hamburger-menu-container');
 const dropDownMenu = document.querySelector('.hamburger-navbar');
 const overlay = document.querySelector('.overlay-hidden');
@@ -12,6 +13,7 @@ hamburgerElement.addEventListener('click', hamburgerControl);
 overlay.addEventListener('click', hamburgerControl);
 
 
+// RANDOM PET CARDS
 const cardsArr  = [
     {
     cardTitle: 'Giant Pandas',
@@ -120,6 +122,7 @@ function generateCard(el) {
 }
 
 
+// TESTIMONIALS SLIDER
 const sliderInput = document.getElementById('slider');
 const slides = document.querySelectorAll('.testimonials-card')
 
@@ -131,3 +134,28 @@ sliderInput.addEventListener('change', function() {
         slide.style.transform = `translateX(-${index * userWidth}%)`;
     })
 })
+
+// TESTIMONIALS 640px 320px
+const parentTestimonials = document.querySelector('.testimonials-container');
+const testimonialsOverlay = document.querySelector('.testOverlay');
+const cardCover = document.querySelector('.popover-cover-hidden');
+const testimonialsCross = document.querySelector('.popover-cover__cross');
+
+parentTestimonials.addEventListener('click', function(e) {
+    if (e.target.classList == 'testimonials-card') {
+        e.target.classList.toggle('popover');
+        cardCover.classList.toggle('popover-cover');
+        testimonialsOverlay.classList.toggle('overlay');
+    }
+})
+
+function closeTesimonialsCard() {
+    const allCards = document.querySelectorAll('.testimonials-card');
+    allCards.forEach(card => card.classList.contains('popover') ? card.classList.remove('popover') : '');
+    cardCover.classList.toggle('popover-cover');
+    testimonialsOverlay.classList.toggle('overlay');
+}
+
+testimonialsOverlay.addEventListener('click', closeTesimonialsCard);
+testimonialsCross.addEventListener('click', closeTesimonialsCard);
+

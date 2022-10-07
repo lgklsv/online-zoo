@@ -678,6 +678,10 @@ a {
     margin-bottom: 183px;
 }
 
+.popover-cover-hidden {
+    display: none;
+}
+
 .leav_foto {
     position: absolute;
     top: 645px;
@@ -1744,17 +1748,23 @@ input[type=number] {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
         gap: 15px;
+        grid-auto-flow: dense;
     }
 
     .testimonials-card {
         height: 109px;
     }
 
-    .testimonials-card-inner {
-        height: 100px;
+    .testimonials-card-inner, .testimonials-card-head, .testimonials-profile-pic, .testimonials-right-head, .testimonials-name, .testimonials-subtext, .testimonials-light-text {
+        pointer-events: none;
     }
 
-    #slider {
+    .testimonials-card-inner {
+        height: 100px;
+        width: 100%;
+    }
+
+    #slider, .input {
         display: none;
     }
 
@@ -2006,7 +2016,7 @@ input[type=number] {
         height: auto;
         background-color: #FFFFFF;
         transition: 0.3s ease;
-        z-index: 2;
+        z-index: 11;
     }
 
     .hamburger-navbar-change {
@@ -2070,6 +2080,57 @@ input[type=number] {
         opacity: 1;
         background-color: rgba(0, 0, 0, .5);
         transition: 0.3s ease;
+        z-index: 10;
+    }
+
+     /* POPOVER */
+    .popover {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 12;
+        height: 391px;
+        overflow-y: scroll;
+    }
+
+    .popover .testimonials-card-inner {
+        width: 267px;
+        height: 391px;
+        overflow-y: scroll;
+        pointer-events: all;
+        padding-bottom: 10px;
+    }
+
+    .popover-cover-hidden {
+        display: block;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .popover-cover {
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        left: 51.5%;
+        transform: translate(-50%, -50%);
+        width: 320px;
+        height: 428px;
+        background: #F5F7F6;
+        z-index: 11;
+        pointer-events: all;
+    }
+
+    .popover-cover__cross {
+        position: absolute;
+        font-size: 14px;
+        top: 12px;
+        right: 10px;
+        background: var(--orang-grad);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        cursor: pointer;
     }
 }
 
