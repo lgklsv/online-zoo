@@ -298,6 +298,7 @@ a {
 .card-item {
     border: 1px solid var(--orang);
     border-radius: 5px;
+    will-change: transform;
     transition: transform 0.5s;
     position: relative;
     animation: scaleDown 0.8s ease-in-out;
@@ -2006,7 +2007,7 @@ input[type=number] {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 5;
+        z-index: 12;
     }
 
     .hamburger-line {
@@ -2048,11 +2049,12 @@ input[type=number] {
         height: auto;
         background-color: #FFFFFF;
         transition: 0.3s ease;
+        will-change: transform;
         z-index: 11;
     }
 
     .hamburger-navbar-change {
-        top: 0px;
+        transform: translateY(340px);
     }
 
     .hamburger-navbar-list {
@@ -2111,6 +2113,7 @@ input[type=number] {
         right: 0;
         opacity: 1;
         background-color: rgba(0, 0, 0, .5);
+        will-change: transform;
         transition: 0.3s ease;
         z-index: 10;
     }
@@ -2120,6 +2123,7 @@ input[type=number] {
         position: fixed;
         top: 50%;
         left: 50%;
+        will-change: transform;
         transform: translate(-50%, -50%);
         z-index: 12;
         height: 391px;
@@ -2138,6 +2142,7 @@ input[type=number] {
         display: block;
         opacity: 0;
         pointer-events: none;
+        will-change: transform;
         transition: all 0.5s ease-in-out;
     }
 
@@ -2146,6 +2151,7 @@ input[type=number] {
         position: fixed;
         top: 50%;
         left: 51.5%;
+        will-change: transform;
         transform: translate(-50%, -50%);
         width: 320px;
         height: 428px;
