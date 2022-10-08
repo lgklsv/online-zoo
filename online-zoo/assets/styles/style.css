@@ -1048,7 +1048,7 @@ footer {
 
 .progress-bar-amount-line {
     height: 2px;
-    width: 93%;
+    width: 93%; 
     background: #72828E;
     display: flex;
     justify-content: space-between;
@@ -1062,11 +1062,19 @@ footer {
     border-radius: 50%;
 }
 
+/* .progress-bar-amount-dot-active {
+    position: relative;
+} */
+
+.progress-bar-amount-dot {
+    position: relative;
+}
+
 .progress-bar-amount-dot-active::after {
     content: url(../../assets/icons/roller_icon.svg);
     position: absolute;
-    top: -7px;
-    left: -5px;
+    top: -15px;
+    left: -15px;
 }
 
 .progress-bar-amounts {
@@ -1110,7 +1118,7 @@ footer {
 .progress-bar-amount-dot-container:first-child {
     height: 10px;
     padding-left: 0;
-}
+} 
 
 .progress-bar-amount-dot-container:last-child {
     height: 10px;
@@ -1574,7 +1582,6 @@ input[type=number] {
     .strelitzia {
         top: 850px;
     }
-
 }
 
 /* TABLET */
@@ -1697,11 +1704,7 @@ input[type=number] {
         left: 225px;
     }
 
-    .card-item:nth-child(5) {
-        display: none;
-    }
-
-    .card-item:nth-child(6) {
+    .card-item:nth-child(5), .card-item:nth-child(6), .arrow-big, #slider, .input, .socials-link-text, .newsletter-email-sub-container {
         display: none;
     }
 
@@ -1753,10 +1756,6 @@ input[type=number] {
         margin: 20px;
         position: relative;
         margin-bottom: 40px;
-    }
-
-    .arrow-big {
-        display: none;
     }
 
     .card-icon {
@@ -1818,10 +1817,6 @@ input[type=number] {
         width: 100%;
     }
 
-    #slider, .input {
-        display: none;
-    }
-
     .testimonials-btn {
         align-self: center;
         margin-bottom: 80px;
@@ -1837,10 +1832,6 @@ input[type=number] {
         height: 203.15px;
         right: -73px;
         top: 532.63px;
-    }
-
-    .socials-link-text, .newsletter-email-sub-container {
-        display: none;
     }
 
     .footer-navbar-list {
@@ -1994,17 +1985,6 @@ input[type=number] {
 
     .progress-bar-amount-line {
         width: 90%;
-    }
-
-    .progress-bar-amount-dot-active-tablet::after {
-        content: url(../../assets/icons/roller_icon.svg);
-        position: absolute;
-        top: -7px;
-        left: -5px;
-    }
-
-    .progress-bar-amount-cash-active-tablet {
-        color: var(--orang2);
     }
     
     .pick-feed-friend-container-donate {
@@ -2529,11 +2509,9 @@ input[type=number] {
         height: 5px;
     }
 
-    .progress-bar-amount-dot-active-tablet::after {
-        content: url(../../assets/icons/roller_icon.svg);
-        position: absolute;
-        top: -7px;
-        left: -7px;
+    .progress-bar-amount-dot-active::after {
+        top: -18px;
+        left: -17px;
         scale: 0.6;
     }
 }
@@ -2561,11 +2539,7 @@ input[type=number] {
         max-width: 350px;
     }
 
-    .palm-foto {
-        top: 1665px;
-    }
-
-    .strelitzia {
+    .palm-foto, .strelitzia {
         top: 1665px;
     }
 }
@@ -2575,11 +2549,7 @@ input[type=number] {
         max-width: 320px;
     }
 
-    .palm-foto {
-        top: 1544px;
-    }
-
-    .strelitzia {
+    .palm-foto, .strelitzia {
         top: 1544px;
     }
 
@@ -2593,11 +2563,7 @@ input[type=number] {
         max-width: 300px;
     }
 
-    .palm-foto {
-        top: 1465px;
-    }
-
-    .strelitzia {
+    .palm-foto, .strelitzia {
         top: 1465px;
     }
 }
