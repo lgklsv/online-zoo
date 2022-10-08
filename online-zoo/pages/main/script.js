@@ -81,14 +81,41 @@ const cardsArr  = [
 ]
 
 const parentElAnimalsGrid = document.querySelector('.animals-grid');
+const parentParentElAnimalsGrid = document.querySelector('.animals-grid-container');
 const animalsGridContainer = document.getElementById('animals-grid-section');
+const elementAnimated = document.querySelector('.card-item');
+let flag = true;
 
 animalsGridContainer.addEventListener('click', function(e) {
-    if(e.target.classList.contains('prev') || e.target.classList.contains('next')) {
+    if(e.target.classList.contains('prev') && flag) {
+        flag = false;
+        document.querySelector('.animals-grid').classList.add('slideLeftAnimation');
         let shuffledArr = shuffleArr(cardsArr);
-        parentElAnimalsGrid.innerHTML = '';
-        const markup = render(shuffledArr.slice(0,6));
-        parentElAnimalsGrid.insertAdjacentHTML('afterbegin', markup);
+        setTimeout(() => {
+            parentParentElAnimalsGrid.innerHTML = '';
+            const markup = render(shuffledArr.slice(0,6), 'slideFromRightAnimation');
+            parentParentElAnimalsGrid.insertAdjacentHTML('afterbegin', markup);
+        }, 400);
+        setTimeout(() => {
+            document.querySelector('.animals-grid').classList.remove('slideLeftAnimation');
+            document.querySelector('.animals-grid').classList.remove('slideFromRightAnimation');
+            flag = true
+        }, 1200);
+    }
+    else if(e.target.classList.contains('next') && flag) {
+        flag = false;
+        document.querySelector('.animals-grid').classList.add('slideRightAnimation');
+        let shuffledArr = shuffleArr(cardsArr);
+        setTimeout(() => {
+            parentParentElAnimalsGrid.innerHTML = '';
+            const markup = render(shuffledArr.slice(0,6), 'slideFromLeftAnimation');
+            parentParentElAnimalsGrid.insertAdjacentHTML('afterbegin', markup);
+        }, 400);
+        setTimeout(() => {
+            document.querySelector('.animals-grid').classList.remove('slideRightAnimation');
+            document.querySelector('.animals-grid').classList.remove('slideFromLeftAnimation');
+            flag = true
+        }, 1200);
     }
 });
 
@@ -96,9 +123,13 @@ function shuffleArr(arr) {
     return arr.sort(()=> Math.random() - 0.5);    
 }
 
-function render(data) {
+function render(data, animation) {
     if(!data || (Array.isArray(data)) && data.length === 0 ) return;
-    return data.map(obj => generateCard(obj)).join('');
+    return `
+        <div class="animals-grid ${animation}">
+        ${data.map(obj => generateCard(obj)).join('')}
+        </div>
+    `;
 }
 
 function generateCard(el) {
