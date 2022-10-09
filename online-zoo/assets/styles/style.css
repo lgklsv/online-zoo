@@ -640,7 +640,8 @@ a {
     height: 391px;
     border-radius: 22px;
     text-align: center;
-    transition: all 0.5s ease-in-out;
+    will-change: transform;
+    transition: all 0.3s ease-in-out;
     background: linear-gradient(var(--light-grey), var(--light-grey)) padding-box,
     linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%) border-box;
     border: 2px solid transparent;
@@ -2124,7 +2125,7 @@ input[type=number] {
         top: 50%;
         left: 50%;
         will-change: transform;
-        transform: translate(-50%, -50%);
+        transform: translate3d(-50%, -50%, 0);
         z-index: 12;
         height: 391px;
         overflow-y: scroll;
@@ -2143,7 +2144,7 @@ input[type=number] {
         opacity: 0;
         pointer-events: none;
         will-change: transform;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
 
     .popover-cover {
@@ -2152,12 +2153,13 @@ input[type=number] {
         top: 50%;
         left: 51.5%;
         will-change: transform;
-        transform: translate(-50%, -50%);
+        transform: translate3d(-50%, -50%, 0);
         width: 320px;
         height: 428px;
         background: #F5F7F6;
         z-index: 11;
         pointer-events: all;
+        transition: all 0.3s ease-in-out;
     }
 
     .popover-cover__cross {

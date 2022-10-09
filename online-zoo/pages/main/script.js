@@ -78,6 +78,52 @@ const cardsArr  = [
     altIcon: 'meet-fish_icon',
     hiddenText: 'An alligator is a large reptile in the Crocodilia order in the genus Alligator of the family Alligatoridae. The two extant species are the American alligator and the Chinese alligator. Additionally, several extinct species of alligator are known from fossil remains.', 
     }
+    ,
+    {
+    cardTitle: 'Lion',
+    cardImg: '../../assets/images/lion.jpg',
+    altText: 'lion',
+    location: 'Native to Africa and India',
+    cardIcon: '../../assets/icons/meet-fish_icon.svg',
+    altIcon: 'meet-fish_icon',
+    hiddenText: 'The lion is a large cat of the genus Panthera native to Africa and India. It has a muscular, broad-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions are larger than females and have a prominent mane.', 
+    },
+    {
+    cardTitle: 'Giraffe',
+    cardImg: '../../assets/images/giraffe.jpg',
+    altText: 'giraffe',
+    location: 'Native to sub-Saharan Africa',
+    cardIcon: '../../assets/icons/banana-bamboo_icon.svg',
+    altIcon: 'banana-bamboo_icon',
+    hiddenText: 'The giraffe is a large African hoofed mammal belonging to the genus Giraffa. It is the tallest living terrestrial animal and the largest ruminant on Earth. Traditionally, giraffes were thought to be one species, Giraffa camelopardalis, with nine subspecies.', 
+    },
+    {
+    cardTitle: 'Camel',
+    cardImg: '../../assets/images/Camel.jpg',
+    altText: 'camel',
+    location: 'Native to deserts and steppes',
+    cardIcon: '../../assets/icons/banana-bamboo_icon.svg',
+    altIcon: 'banana-bamboo_icon',
+    hiddenText: 'A camel is an even-toed ungulate in the genus Camelus that bears distinctive fatty deposits known as "humps" on its back. Camels have long been domesticated and, as livestock, they provide food and textiles.', 
+    },
+    {
+    cardTitle: 'Elephant',
+    cardImg: '../../assets/images/elephant.jpg',
+    altText: 'elephant',
+    location: 'Native to Africa and Asia',
+    cardIcon: '../../assets/icons/banana-bamboo_icon.svg',
+    altIcon: 'banana-bamboo_icon',
+    hiddenText: 'Elephants are the largest existing land animals. Three living species are currently recognised: the African bush elephant, the African forest elephant, and the Asian elephant. They are the only surviving members of the family Elephantidae and the order Proboscidea.', 
+    },
+    {
+    cardTitle: 'Dolphin',
+    cardImg: '../../assets/images/dolphin.jpg',
+    altText: 'dolphin',
+    location: 'Native to tropical waters',
+    cardIcon: '../../assets/icons/banana-bamboo_icon.svg',
+    altIcon: 'banana-bamboo_icon',
+    hiddenText: 'A dolphin is an aquatic mammal within the infraorder Cetacea. Dolphin species belong to the families Delphinidae, Platanistidae, Iniidae, Pontoporiidae, and the extinct Lipotidae. There are 40 extant species named as dolphins.', 
+    }
 ]
 
 const parentElAnimalsGrid = document.querySelector('.animals-grid');
@@ -190,3 +236,11 @@ function closeTesimonialsCard() {
 testimonialsOverlay.addEventListener('click', closeTesimonialsCard);
 testimonialsCross.addEventListener('click', closeTesimonialsCard);
 
+
+const testimonialsCards = document.querySelectorAll('.testimonials-card');
+window.addEventListener('resize' , function() {
+    if (this.window.innerWidth == 840 || this.window.innerWidth == 640 || this.window.innerWidth == 320 || this.window.innerWidth == 375 || this.window.innerWidth == 390 || this.window.innerWidth == 414) {
+        testimonialsCards.forEach(card => card.style.removeProperty('transform'));
+        console.log('done');
+    }
+})
